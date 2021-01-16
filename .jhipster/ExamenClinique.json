@@ -1,0 +1,33 @@
+{
+  "name": "ExamenClinique",
+  "fields": [
+    {
+      "fieldName": "gcs",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "pa",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "diurese",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autre",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210116113402",
+  "entityTableName": "examen_clinique",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

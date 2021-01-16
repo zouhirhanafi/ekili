@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity DossierPatient.
+    -->
+    <changeSet id="20210116113002-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="antecedent_id"
+                                 baseTableName="dossier_patient"
+                                 constraintName="fk_dossier_patient_antecedent_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="antecedent"/>
+
+        <addForeignKeyConstraint baseColumnNames="diagnostic_id"
+                                 baseTableName="dossier_patient"
+                                 constraintName="fk_dossier_patient_diagnostic_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="diagnostic"/>
+
+        <addForeignKeyConstraint baseColumnNames="indication_hd_id"
+                                 baseTableName="dossier_patient"
+                                 constraintName="fk_dossier_patient_indication_hd_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="indication_hd"/>
+
+        <addForeignKeyConstraint baseColumnNames="examen_clinique_id"
+                                 baseTableName="dossier_patient"
+                                 constraintName="fk_dossier_patient_examen_clinique_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="examen_clinique"/>
+
+    </changeSet>
+</databaseChangeLog>

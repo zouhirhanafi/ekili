@@ -7,6 +7,17 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "parameter": "Parameter",
+        "dossierPatient": "Dossier Patient",
+        "antecedent": "Antecedent",
+        "diagnostic": "Diagnostic",
+        "indicationHd": "Indication Hd",
+        "examenClinique": "Examen Clinique",
+        "examenBioligique": "Examen Bioligique",
+        "prescription": "Prescription",
+        "traitementPerdialyse": "Traitement Perdialyse",
+        "surveillance": "Surveillance",
+        "mesurePerdialyse": "Mesure Perdialyse",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity Surveillance.
+    -->
+    <changeSet id="20210116113802-1" author="jhipster">
+        <createTable tableName="surveillance">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="infirmier" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="poste" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="generateur" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="statut" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="poid" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ufnet" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="etat_conscience" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="eupneique" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="restitution_par" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="autre_complication" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="observation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="traitement_id" type="bigint">
+                <constraints unique="true" nullable="true" uniqueConstraintName="ux_surveillance_traitement_id" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210116113802-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210116113802-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/surveillance.csv"
+                  separator=";"
+                  tableName="surveillance">
+            <column name="id" type="numeric"/>
+            <column name="infirmier" type="numeric"/>
+            <column name="poste" type="numeric"/>
+            <column name="generateur" type="numeric"/>
+            <column name="statut" type="string"/>
+            <column name="poid" type="numeric"/>
+            <column name="ufnet" type="numeric"/>
+            <column name="etat_conscience" type="numeric"/>
+            <column name="eupneique" type="numeric"/>
+            <column name="restitution_par" type="numeric"/>
+            <column name="autre_complication" type="string"/>
+            <column name="observation" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

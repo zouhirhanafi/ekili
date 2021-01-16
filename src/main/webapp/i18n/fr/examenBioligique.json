@@ -1,0 +1,38 @@
+{
+  "ekiliApp": {
+    "examenBioligique": {
+      "home": {
+        "title": "ExamenBioligiques",
+        "createLabel": "Créer un nouveau Examen Bioligique",
+        "createOrEditLabel": "Créer ou éditer un Examen Bioligique",
+        "notFound": "Aucun Examen Bioligique trouvé"
+      },
+      "created": "Un nouveau Examen Bioligique a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Examen Bioligique avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Examen Bioligique avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Examen Bioligique {{ id }} ?"
+      },
+      "detail": {
+        "title": "Examen Bioligique"
+      },
+      "date": "Date",
+      "uree": "Uree",
+      "creat": "Creat",
+      "k": "K",
+      "na": "Na",
+      "ca": "Ca",
+      "crp": "Crp",
+      "hb": "Hb",
+      "gb": "Gb",
+      "plt": "Plt",
+      "acHbs": "Ac Hbs",
+      "agHbs": "Ag Hbs",
+      "hbc": "Hbc",
+      "acHvc": "Ac Hvc",
+      "vih": "Vih",
+      "autre": "Autre",
+      "patient": "Patient"
+    }
+  }
+}

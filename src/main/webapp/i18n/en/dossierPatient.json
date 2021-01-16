@@ -1,0 +1,36 @@
+{
+  "ekiliApp": {
+    "dossierPatient": {
+      "home": {
+        "title": "Dossier Patients",
+        "createLabel": "Create a new Dossier Patient",
+        "createOrEditLabel": "Create or edit a Dossier Patient",
+        "notFound": "No Dossier Patients found"
+      },
+      "created": "A new Dossier Patient is created with identifier {{ param }}",
+      "updated": "A Dossier Patient is updated with identifier {{ param }}",
+      "deleted": "A Dossier Patient is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dossier Patient {{ id }}?"
+      },
+      "detail": {
+        "title": "Dossier Patient"
+      },
+      "ip": "Ip",
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "genre": "Genre",
+      "tel": "Tel",
+      "adresse": "Adresse",
+      "amo": "Amo",
+      "typeCentreOrigine": "Type Centre Origine",
+      "villeCentreOrigine": "Ville Centre Origine",
+      "observation": "Observation",
+      "naissance": "Naissance",
+      "antecedent": "Antecedent",
+      "diagnostic": "Diagnostic",
+      "indicationHd": "Indication Hd",
+      "examenClinique": "Examen Clinique"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Diagnostic",
+  "fields": [
+    {
+      "fieldName": "hvb",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "hvc",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "vih",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "poidSec",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "autre",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210116113202",
+  "entityTableName": "diagnostic",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

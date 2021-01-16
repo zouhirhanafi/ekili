@@ -1,0 +1,23 @@
+{
+  "ekiliApp": {
+    "traitementPerdialyse": {
+      "home": {
+        "title": "TraitementPerdialyses",
+        "createLabel": "Créer un nouveau Traitement Perdialyse",
+        "createOrEditLabel": "Créer ou éditer un Traitement Perdialyse",
+        "notFound": "Aucun Traitement Perdialyse trouvé"
+      },
+      "created": "Un nouveau Traitement Perdialyse a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Traitement Perdialyse avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Traitement Perdialyse avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Traitement Perdialyse {{ id }} ?"
+      },
+      "detail": {
+        "title": "Traitement Perdialyse"
+      },
+      "autre": "Autre",
+      "type": "Type"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ekiliApp": {
+    "indicationHd": {
+      "home": {
+        "title": "Indication Hds",
+        "createLabel": "Create a new Indication Hd",
+        "createOrEditLabel": "Create or edit a Indication Hd",
+        "notFound": "No Indication Hds found"
+      },
+      "created": "A new Indication Hd is created with identifier {{ param }}",
+      "updated": "A Indication Hd is updated with identifier {{ param }}",
+      "deleted": "A Indication Hd is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Indication Hd {{ id }}?"
+      },
+      "detail": {
+        "title": "Indication Hd"
+      },
+      "service": "Service",
+      "autre": "Autre"
+    }
+  }
+}

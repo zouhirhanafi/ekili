@@ -1,0 +1,46 @@
+{
+  "ekiliApp": {
+    "prescription": {
+      "home": {
+        "title": "Prescriptions",
+        "createLabel": "Create a new Prescription",
+        "createOrEditLabel": "Create or edit a Prescription",
+        "notFound": "No Prescriptions found"
+      },
+      "created": "A new Prescription is created with identifier {{ param }}",
+      "updated": "A Prescription is updated with identifier {{ param }}",
+      "deleted": "A Prescription is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Prescription {{ id }}?"
+      },
+      "detail": {
+        "title": "Prescription"
+      },
+      "duree": "Duree",
+      "capillaire": "Capillaire",
+      "restitutionP": "Restitution P",
+      "niveauUrgence": "Niveau Urgence",
+      "ufTotale": "Uf Totale",
+      "rincage": "Rincage",
+      "transfusion": "Transfusion",
+      "datePlanification": "Date Planification",
+      "circuit": "Circuit",
+      "abordVasculaire": "Abord Vasculaire",
+      "profil": "Profil",
+      "conductiviteP": "Conductivite P",
+      "debitPompe": "Debit Pompe",
+      "temperatureDialysat": "Temperature Dialysat",
+      "atc": "Atc",
+      "hnfh0": "Hnfh 0",
+      "hnfh2": "Hnfh 2",
+      "hbpm": "Hbpm",
+      "statut": "Statut",
+      "motifAnnulation": "Motif Annulation",
+      "motifReport": "Motif Report",
+      "observationP": "Observation P",
+      "traitement": "Traitement",
+      "surveillance": "Surveillance",
+      "patient": "Patient"
+    }
+  }
+}

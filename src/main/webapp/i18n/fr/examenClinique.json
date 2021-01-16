@@ -1,0 +1,25 @@
+{
+  "ekiliApp": {
+    "examenClinique": {
+      "home": {
+        "title": "ExamenCliniques",
+        "createLabel": "Créer un nouveau Examen Clinique",
+        "createOrEditLabel": "Créer ou éditer un Examen Clinique",
+        "notFound": "Aucun Examen Clinique trouvé"
+      },
+      "created": "Un nouveau Examen Clinique a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Examen Clinique avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Examen Clinique avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Examen Clinique {{ id }} ?"
+      },
+      "detail": {
+        "title": "Examen Clinique"
+      },
+      "gcs": "Gcs",
+      "pa": "Pa",
+      "diurese": "Diurese",
+      "autre": "Autre"
+    }
+  }
+}

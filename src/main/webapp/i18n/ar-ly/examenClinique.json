@@ -1,0 +1,25 @@
+{
+  "ekiliApp": {
+    "examenClinique": {
+      "home": {
+        "title": "Examen Cliniques",
+        "createLabel": "Create a new Examen Clinique",
+        "createOrEditLabel": "Create or edit a Examen Clinique",
+        "notFound": "No Examen Cliniques found"
+      },
+      "created": "A new Examen Clinique is created with identifier {{ param }}",
+      "updated": "A Examen Clinique is updated with identifier {{ param }}",
+      "deleted": "A Examen Clinique is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Examen Clinique {{ id }}?"
+      },
+      "detail": {
+        "title": "Examen Clinique"
+      },
+      "gcs": "Gcs",
+      "pa": "Pa",
+      "diurese": "Diurese",
+      "autre": "Autre"
+    }
+  }
+}

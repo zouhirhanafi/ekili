@@ -1,0 +1,38 @@
+{
+  "ekiliApp": {
+    "mesurePerdialyse": {
+      "home": {
+        "title": "MesurePerdialyses",
+        "createLabel": "Créer un nouveau Mesure Perdialyse",
+        "createOrEditLabel": "Créer ou éditer un Mesure Perdialyse",
+        "notFound": "Aucun Mesure Perdialyse trouvé"
+      },
+      "created": "Un nouveau Mesure Perdialyse a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mesure Perdialyse avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mesure Perdialyse avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Mesure Perdialyse {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mesure Perdialyse"
+      },
+      "heure": "Heure",
+      "poid": "Poid",
+      "ta": "Ta",
+      "tp": "Tp",
+      "dextro": "Dextro",
+      "pa": "Pa",
+      "pv": "Pv",
+      "ptm": "Ptm",
+      "ufh": "Ufh",
+      "conductivite": "Conductivite",
+      "td": "Td",
+      "dps": "Dps",
+      "heparine": "Heparine",
+      "rincage": "Rincage",
+      "transfusion": "Transfusion",
+      "numPoche": "Num Poche",
+      "surveillance": "Surveillance"
+    }
+  }
+}
