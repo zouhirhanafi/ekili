@@ -1,0 +1,236 @@
+/**
+ * JHipster JDL model for myMonolithApp
+ */
+application {
+  config {
+    applicationType monolith,
+    baseName ekili,
+    packageName ma.ekili,
+    authenticationType jwt,
+    databaseType sql,
+    prodDatabaseType postgresql,
+    devDatabaseType postgresql,
+    cacheProvider ehcache,
+    buildTool gradle,
+    websocket spring-websocket,
+//    searchEngine elasticsearch,
+//    testFrameworks [protractor],
+    clientFramework react,
+    // clientTheme lux,
+    // clientThemeVariant primary,
+    enableTranslation true,
+    nativeLanguage fr,
+    languages [fr, en, ar-ly]
+  }
+  entities *
+}
+
+entity Parameter {
+    label String
+	lib2 String
+	lib3 String
+
+	refExterne String
+
+	val1 String
+    val2 String
+	
+    val3 String
+	
+	ordre Integer
+//	lastUpdatedDate ZonedDateTime     //TODO
+}
+entity DossierPatient {
+    ip Long required unique
+	nom String required
+	prenom String required
+	genre Integer required // parametrable
+	tel String
+	adresse String
+    amo Integer // parametrable
+	typeCentreOrigine Integer // parametrable
+	villeCentreOrigine Integer // parametrable
+    observation String
+	naissance LocalDate
+}
+entity Antecedent {
+//	antecedents Integer     // parametrable     //TODO liste
+//	diabete Boolean 
+//	hta Boolean 
+//	irc Boolean 
+//	hvc Boolean
+//	hvb Boolean
+//	cardiopathie Boolean
+    autre String
+}
+entity Diagnostic {
+//	diagnostics Integer     // parametrable     //TODO lsite
+//	ira Boolean
+//	irc Boolean
+//	hdc Boolean
+    hvb Integer // parametrable
+	hvc Integer // parametrable
+	vih Integer // parametrable
+	poidSec Double
+	autre String
+}
+entity IndicationHd {
+//	indications Integer     // parametrable     //TODO liste
+//	hyperkaliemie Boolean
+//	surcharge Boolean
+//	hyperuremie  Boolean
+//	hypercalcemie  Boolean
+//	acidose  Boolean
+//	seanceProgrammee  Boolean
+//	epurationToxique  Boolean
+    service Integer // parametrable
+	autre String
+}
+entity ExamenClinique {
+//	examens Integer     // parametrable     //TODO liste
+//	omi Boolean
+//	ralesCripitants Boolean
+//	dyspnee  Boolean
+    gcs Double
+	pa String
+	diurese Integer // parametrable
+	autre String
+}
+entity ExamenBioligique {
+    date LocalDate
+	uree Double
+	creat Double
+	k Double
+	na Double
+	ca Double
+	crp Double
+	hb Double
+	gb Double
+	plt Double
+	acHbs String
+	agHbs Double
+	hbc String
+	acHvc String
+	vih String
+	autre String
+}
+enum StatutPrescription {
+    TERMINEE, AVENIR, ANNULEE, REPORTEE
+}
+entity Prescription {
+//	prescripteur Long     //TODO connected user
+    duree Integer
+	capillaire Integer // parametrable
+	restitutionP Integer // parametrable
+	niveauUrgence Integer // parametrable
+	ufTotale Double
+	rincage Integer	 // parametrable
+	transfusion Integer // parametrable
+	datePlanification LocalDate
+	circuit Integer // parametrable
+	abordVasculaire Integer // parametrable
+	profil Integer // parametrable
+	conductiviteP Double
+	debitPompe Double
+	temperatureDialysat Double
+	atc Boolean
+	hnfh0 Double
+	hnfh2 Double
+	hbpm Double
+	statut StatutPrescription
+	motifAnnulation Integer // parametrable 
+	motifReport Integer // parametrable
+	observationP String
+}
+enum TypeTraitementPerdialyse {
+    P, S
+}
+entity TraitementPerdialyse {
+//	traitements Integer     // parametrable     //TODO liste
+//	droguesVa Boolean
+//	loxen Boolean
+//	insuline Boolean
+//	fer Boolean
+//	epo Boolean
+//	ains Boolean
+//	paracetomol Boolean
+//	valium Boolean
+//	atb Boolean
+    autre String
+	type TypeTraitementPerdialyse // prescription ou surveillance
+}
+enum StatutSurveillance {
+    ENCOURS, VALIDEE, ANNULEE
+}
+entity Surveillance {
+//	medecinS Long     //TODO connected user
+    infirmier Integer required // parametrable
+	poste Integer // parametrable
+	generateur Integer // parametrable
+
+	statut StatutSurveillance
+	// heureDebut String // TODO calculée 
+	// heureFin String // TODO calculée 
+	// duree // TODO calculée
+	poid Double
+	ufnet Double
+	etatConscience Integer // parametrable
+	eupneique Integer // parametrable
+	restitutionPar Integer // parametrable
+	
+//	complications Integer //TODO choix multiple
+	autreComplication String
+	observation String
+}
+entity MesurePerdialyse {
+    heure String // Time 
+	poid Double
+	ta String
+	tp Double
+	dextro Double
+	pa String
+	pv Double
+	ptm Double
+	ufh Double
+	conductivite Double
+	td Double
+	dps Double
+	heparine Double
+	rincage Integer // parametrable
+	transfusion Integer // parametrable
+	numPoche Integer
+}
+relationship ManyToOne {
+    ExamenBioligique{patient} to DossierPatient
+	Prescription{patient} to DossierPatient
+	MesurePerdialyse{surveillance} to Surveillance
+	Parameter{type} to Parameter
+	Parameter{paraent} to Parameter
+}
+relationship OneToOne {
+    DossierPatient{antecedent} to Antecedent
+	DossierPatient{diagnostic} to Diagnostic
+	DossierPatient{indicationHd} to IndicationHd
+	DossierPatient{examenClinique} to ExamenClinique
+
+	Prescription{traitement} to TraitementPerdialyse
+	Prescription{surveillance} to Surveillance
+	Surveillance{traitement} to TraitementPerdialyse
+}
+//relationship OneToMany {
+//	Antecedent to Parameter{antecedents}
+//	Diagnostic to Parameter{diagnostics}
+//	IndicationHd to Parameter{indications}
+//	ExamenClinique to Parameter{examens}
+//	TraitementPerdialyse to Parameter{traitements}
+//	Surveillance to Parameter{complications}
+//}
+// =======
+// Options
+// =======
+paginate Parameter, DossierPatient, Prescription, Surveillance with pagination
+filter Parameter, DossierPatient, Prescription, Surveillance
+//search DossierPatient with elasticsearch
+// dto DossierPatient, Prescription, Surveillance with mapstruct
+// Set service options to all 
+service all with serviceClass
