@@ -1,0 +1,72 @@
+{
+  "name": "Surveillance",
+  "fields": [
+    {
+      "fieldName": "infirmier",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "poste",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "generateur",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "StatutSurveillance",
+      "fieldValues": "ENCOURS,VALIDEE,ANNULEE"
+    },
+    {
+      "fieldName": "poid",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ufnet",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "etatConscience",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "eupneique",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "restitutionPar",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "autreComplication",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "observation",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "traitementPerdialyse",
+      "otherEntityRelationshipName": "surveillance",
+      "relationshipName": "traitement",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210116113802",
+  "entityTableName": "surveillance",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

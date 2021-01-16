@@ -5,7 +5,7 @@
     "baseName": "ekili",
     "packageName": "ma.ekili",
     "packageFolder": "ma/ekili",
-    "serverPort": 8080,
+    "serverPort": "8080",
     "serviceDiscoveryType": false,
     "authenticationType": "jwt",
     "uaaBaseName": "../uaa",
@@ -24,7 +24,7 @@
     "testFrameworks": [],
     "enableTranslation": true,
     "nativeLanguage": "fr",
-    "languages": ["ar-ly", "en", "fr"],
+    "languages": ["fr", "en", "ar-ly"],
     "clientFramework": "react",
     "jhiPrefix": "jhi",
     "jhipsterVersion": "6.10.5",
@@ -36,9 +36,26 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "blueprints": [],
-    "prettierJava": true
+    "prettierJava": true,
+    "skipUserManagement": false,
+    "skipClient": false,
+    "skipServer": false,
+    "clientThemeVariant": ""
   },
   "git-provider": "GitHub",
   "git-company": "zouhirhanafi",
-  "repository-name": "ekili"
+  "repository-name": "ekili",
+  "entities": [
+    "Parameter",
+    "DossierPatient",
+    "Antecedent",
+    "Diagnostic",
+    "IndicationHd",
+    "ExamenClinique",
+    "ExamenBioligique",
+    "Prescription",
+    "TraitementPerdialyse",
+    "Surveillance",
+    "MesurePerdialyse"
+  ]
 }

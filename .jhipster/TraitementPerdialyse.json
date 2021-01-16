@@ -1,0 +1,26 @@
+{
+  "name": "TraitementPerdialyse",
+  "fields": [
+    {
+      "fieldName": "autre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "TypeTraitementPerdialyse",
+      "fieldValues": "P,S"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210116113702",
+  "entityTableName": "traitement_perdialyse",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

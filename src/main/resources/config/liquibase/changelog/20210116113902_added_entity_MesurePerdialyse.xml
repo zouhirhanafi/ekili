@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity MesurePerdialyse.
+    -->
+    <changeSet id="20210116113902-1" author="jhipster">
+        <createTable tableName="mesure_perdialyse">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="heure" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="poid" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ta" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tp" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="dextro" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="pa" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="pv" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ptm" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="ufh" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="conductivite" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="td" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="dps" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="heparine" type="double">
+                <constraints nullable="true" />
+            </column>
+            <column name="rincage" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="transfusion" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="num_poche" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="surveillance_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210116113902-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210116113902-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/mesure_perdialyse.csv"
+                  separator=";"
+                  tableName="mesure_perdialyse">
+            <column name="id" type="numeric"/>
+            <column name="heure" type="string"/>
+            <column name="poid" type="numeric"/>
+            <column name="ta" type="string"/>
+            <column name="tp" type="numeric"/>
+            <column name="dextro" type="numeric"/>
+            <column name="pa" type="string"/>
+            <column name="pv" type="numeric"/>
+            <column name="ptm" type="numeric"/>
+            <column name="ufh" type="numeric"/>
+            <column name="conductivite" type="numeric"/>
+            <column name="td" type="numeric"/>
+            <column name="dps" type="numeric"/>
+            <column name="heparine" type="numeric"/>
+            <column name="rincage" type="numeric"/>
+            <column name="transfusion" type="numeric"/>
+            <column name="num_poche" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

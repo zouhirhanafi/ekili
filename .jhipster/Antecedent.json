@@ -1,0 +1,21 @@
+{
+  "name": "Antecedent",
+  "fields": [
+    {
+      "fieldName": "autre",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210116113102",
+  "entityTableName": "antecedent",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

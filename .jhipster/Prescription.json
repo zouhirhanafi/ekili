@@ -1,0 +1,130 @@
+{
+  "name": "Prescription",
+  "fields": [
+    {
+      "fieldName": "duree",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "capillaire",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "restitutionP",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "niveauUrgence",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ufTotale",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "rincage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "transfusion",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "datePlanification",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "circuit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "abordVasculaire",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "profil",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "conductiviteP",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "debitPompe",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "temperatureDialysat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "atc",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "hnfh0",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "hnfh2",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "hbpm",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "StatutPrescription",
+      "fieldValues": "TERMINEE,AVENIR,ANNULEE,REPORTEE"
+    },
+    {
+      "fieldName": "motifAnnulation",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "motifReport",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "observationP",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "traitementPerdialyse",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "traitement",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "surveillance",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "surveillance",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "dossierPatient",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "patient",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210116113602",
+  "entityTableName": "prescription",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

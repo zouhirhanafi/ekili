@@ -1,0 +1,89 @@
+{
+  "name": "ExamenBioligique",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "uree",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "creat",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "k",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "na",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ca",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "crp",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "hb",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "gb",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "plt",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "acHbs",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "agHbs",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "hbc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "acHvc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vih",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "autre",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "dossierPatient",
+      "otherEntityRelationshipName": "examenBioligique",
+      "relationshipName": "patient",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210116113502",
+  "entityTableName": "examen_bioligique",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

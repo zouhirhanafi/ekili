@@ -1,0 +1,26 @@
+{
+  "ekiliApp": {
+    "diagnostic": {
+      "home": {
+        "title": "Diagnostics",
+        "createLabel": "Créer un nouveau Diagnostic",
+        "createOrEditLabel": "Créer ou éditer un Diagnostic",
+        "notFound": "Aucun Diagnostic trouvé"
+      },
+      "created": "Un nouveau Diagnostic a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Diagnostic avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Diagnostic avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Diagnostic {{ id }} ?"
+      },
+      "detail": {
+        "title": "Diagnostic"
+      },
+      "hvb": "Hvb",
+      "hvc": "Hvc",
+      "vih": "Vih",
+      "poidSec": "Poid Sec",
+      "autre": "Autre"
+    }
+  }
+}

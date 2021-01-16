@@ -1,0 +1,89 @@
+{
+  "name": "MesurePerdialyse",
+  "fields": [
+    {
+      "fieldName": "heure",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poid",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ta",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tp",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "dextro",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "pa",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pv",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ptm",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "ufh",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "conductivite",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "td",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "dps",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "heparine",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "rincage",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "transfusion",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numPoche",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "surveillance",
+      "otherEntityRelationshipName": "mesurePerdialyse",
+      "relationshipName": "surveillance",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210116113902",
+  "entityTableName": "mesure_perdialyse",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}

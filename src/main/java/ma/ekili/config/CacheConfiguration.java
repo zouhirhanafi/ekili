@@ -47,6 +47,17 @@ public class CacheConfiguration {
             createCache(cm, ma.ekili.domain.User.class.getName());
             createCache(cm, ma.ekili.domain.Authority.class.getName());
             createCache(cm, ma.ekili.domain.User.class.getName() + ".authorities");
+            createCache(cm, ma.ekili.domain.Parameter.class.getName());
+            createCache(cm, ma.ekili.domain.DossierPatient.class.getName());
+            createCache(cm, ma.ekili.domain.Antecedent.class.getName());
+            createCache(cm, ma.ekili.domain.Diagnostic.class.getName());
+            createCache(cm, ma.ekili.domain.IndicationHd.class.getName());
+            createCache(cm, ma.ekili.domain.ExamenClinique.class.getName());
+            createCache(cm, ma.ekili.domain.ExamenBioligique.class.getName());
+            createCache(cm, ma.ekili.domain.Prescription.class.getName());
+            createCache(cm, ma.ekili.domain.TraitementPerdialyse.class.getName());
+            createCache(cm, ma.ekili.domain.Surveillance.class.getName());
+            createCache(cm, ma.ekili.domain.MesurePerdialyse.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

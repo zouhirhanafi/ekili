@@ -1,0 +1,11 @@
+{
+  "ekiliApp": {
+    "StatutPrescription": {
+      "null": "",
+      "TERMINEE": "TERMINEE",
+      "AVENIR": "AVENIR",
+      "ANNULEE": "ANNULEE",
+      "REPORTEE": "REPORTEE"
+    }
+  }
+}

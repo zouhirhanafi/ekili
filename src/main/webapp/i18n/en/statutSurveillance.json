@@ -1,0 +1,10 @@
+{
+  "ekiliApp": {
+    "StatutSurveillance": {
+      "null": "",
+      "ENCOURS": "ENCOURS",
+      "VALIDEE": "VALIDEE",
+      "ANNULEE": "ANNULEE"
+    }
+  }
+}

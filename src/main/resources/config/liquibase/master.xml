@@ -14,7 +14,24 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116112902_added_entity_Parameter.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113002_added_entity_DossierPatient.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113102_added_entity_Antecedent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113202_added_entity_Diagnostic.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113302_added_entity_IndicationHd.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113402_added_entity_ExamenClinique.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113502_added_entity_ExamenBioligique.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113602_added_entity_Prescription.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113702_added_entity_TraitementPerdialyse.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113802_added_entity_Surveillance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113902_added_entity_MesurePerdialyse.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20210116112902_added_entity_constraints_Parameter.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113002_added_entity_constraints_DossierPatient.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113502_added_entity_constraints_ExamenBioligique.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113602_added_entity_constraints_Prescription.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113802_added_entity_constraints_Surveillance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210116113902_added_entity_constraints_MesurePerdialyse.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

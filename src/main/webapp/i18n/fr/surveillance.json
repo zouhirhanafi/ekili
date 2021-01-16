@@ -1,0 +1,33 @@
+{
+  "ekiliApp": {
+    "surveillance": {
+      "home": {
+        "title": "Surveillances",
+        "createLabel": "Créer un nouveau Surveillance",
+        "createOrEditLabel": "Créer ou éditer un Surveillance",
+        "notFound": "Aucun Surveillance trouvé"
+      },
+      "created": "Un nouveau Surveillance a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Surveillance avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Surveillance avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Surveillance {{ id }} ?"
+      },
+      "detail": {
+        "title": "Surveillance"
+      },
+      "infirmier": "Infirmier",
+      "poste": "Poste",
+      "generateur": "Generateur",
+      "statut": "Statut",
+      "poid": "Poid",
+      "ufnet": "Ufnet",
+      "etatConscience": "Etat Conscience",
+      "eupneique": "Eupneique",
+      "restitutionPar": "Restitution Par",
+      "autreComplication": "Autre Complication",
+      "observation": "Observation",
+      "traitement": "Traitement"
+    }
+  }
+}

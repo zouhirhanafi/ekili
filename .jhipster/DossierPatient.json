@@ -1,0 +1,98 @@
+{
+  "name": "DossierPatient",
+  "fields": [
+    {
+      "fieldName": "ip",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "typeCentreOrigine",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "villeCentreOrigine",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "observation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "naissance",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "antecedent",
+      "otherEntityRelationshipName": "dossierPatient",
+      "relationshipName": "antecedent",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "diagnostic",
+      "otherEntityRelationshipName": "dossierPatient",
+      "relationshipName": "diagnostic",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "indicationHd",
+      "otherEntityRelationshipName": "dossierPatient",
+      "relationshipName": "indicationHd",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "examenClinique",
+      "otherEntityRelationshipName": "dossierPatient",
+      "relationshipName": "examenClinique",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210116113002",
+  "entityTableName": "dossier_patient",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["ekili"]
+}
